@@ -1,9 +1,7 @@
 package online.tinkie101.dentamedcashflow.entities;
 
 import javax.persistence.*;
-import java.sql.Date;
 import java.util.Calendar;
-import java.util.GregorianCalendar;
 
 @Entity
 @Table(name = "entries")
