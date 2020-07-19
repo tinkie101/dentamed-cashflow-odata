@@ -8,8 +8,8 @@ import java.util.Calendar;
 public class Entry {
 
     @Id
-    @GeneratedValue
-    private int id;
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
 
     @Temporal(TemporalType.DATE)
     Calendar date;
@@ -35,11 +35,11 @@ public class Entry {
         this.value = value;
     }
 
-    public int getId() {
+    public Long getId() {
         return this.id;
     }
 
-    public void setId(int id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
