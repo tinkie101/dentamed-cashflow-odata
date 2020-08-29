@@ -1,14 +1,18 @@
 package online.tinkie101.dentamedcashflow.config;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
-import org.springframework.stereotype.Component;
+import org.springframework.context.annotation.Configuration;
 
-@Component
-@ConfigurationProperties("app.docx.server")
+@Configuration
+@ConfigurationProperties(prefix = "express.docx")
 public class DocxConfig {
-    private final String baseUrl = "http://localhost:3000";
+    private String baseUrl;
 
     public String getBaseUrl() {
-        return this.baseUrl;
+        return baseUrl;
+    }
+
+    public void setBaseUrl(String baseUrl) {
+        this.baseUrl = baseUrl;
     }
 }
