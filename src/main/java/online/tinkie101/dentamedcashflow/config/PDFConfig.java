@@ -1,4 +1,4 @@
-package online.tinkie101.dentamedcashflow.mrBean;
+package online.tinkie101.dentamedcashflow.config;
 
 import fr.opensagres.poi.xwpf.converter.core.IXWPFConverter;
 import fr.opensagres.poi.xwpf.converter.pdf.PdfConverter;
@@ -7,7 +7,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
-public class mrBeansBeans {
+public class PDFConfig {
     @Bean
     public IXWPFConverter<PdfOptions> pdfConverter() {
         return PdfConverter.getInstance();
