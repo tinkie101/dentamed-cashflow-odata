@@ -4,9 +4,9 @@ public class EntryJSON {
     private String comment;
     private String date;
     private String income;
-    private Long value;
+    private Double value;
 
-    public EntryJSON(String comment, String date, String income, Long value) {
+    public EntryJSON(String comment, String date, String income, Double value) {
         this.comment = comment;
         this.date = date;
         this.income = income;
@@ -37,11 +37,11 @@ public class EntryJSON {
         this.income = income;
     }
 
-    public Long getValue() {
+    public Double getValue() {
         return value;
     }
 
-    public void setValue(Long value) {
+    public void setValue(Double value) {
         this.value = value;
     }
 }
